@@ -9,24 +9,12 @@ var app = express();
     el método get.
 */
 app.get("/",cors(), function(req, res){
-  var obj = [{
-    "id": 1,
-    "name": "Jacobo"
-  },
-  {
-    "id": 2,
-    "name": "Steffi"
-  },
-  {
-    "id": 3,
-    "name": "Pipo"
-  },
-  {
-    "id": 4,
-    "name": "Louper"
-  }
-
-  ];
+  var obj = {
+    "results": [
+      "Jacobo",
+      "Steffi"
+    ]
+  };
   res.send(obj);
   //res.end("Hola desde app.js");
 });
