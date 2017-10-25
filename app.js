@@ -20,6 +20,10 @@ app.get("/",cors(), function(req, res){
   {
     "id": 3,
     "name": "Pipo"
+  },
+  {
+    "id": 4,
+    "name": "Louper"
   }
 
   ];
