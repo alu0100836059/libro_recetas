@@ -1,6 +1,6 @@
 // Almacenamos en la variable la funcionalidad del framework Express
 var express = require("express");
-
+var cors = require("cors");
 // Asignamos a app la ejecución de express
 var app = express();
 
@@ -8,8 +8,22 @@ var app = express();
     a la dirección "/" (puro dominio) mediante
     el método get.
 */
-app.get("/", function(req, res){
-  res.send("Hola en mi primera página web");
+app.get("/",cors(), function(req, res){
+  var obj = [{
+    "id": 1,
+    "name": "Jacobo"
+  },
+  {
+    "id": 2,
+    "name": "Steffi"
+  },
+  {
+    "id": 3,
+    "name": "Pipo"
+  }
+
+  ];
+  res.send(obj);
   //res.end("Hola desde app.js");
 });
 
