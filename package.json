@@ -1,0 +1,27 @@
+{
+  "name": "libro_recetas",
+  "version": "1.0.0",
+  "description": "Libro digital para guardar recetas",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alu0100836059/libro_recetas.git"
+  },
+  "keywords": [
+    "recetas",
+    "libro",
+    "digital"
+  ],
+  "author": "Jacobo Rodicio González",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alu0100836059/libro_recetas/issues"
+  },
+  "homepage": "https://github.com/alu0100836059/libro_recetas#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
